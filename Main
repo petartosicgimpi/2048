@@ -1,4 +1,4 @@
-import pyautogui as pg 
+import pyautogui as pg # dozvoljava kodu da kontroliše kursor 
 import numpy as np
 import time
 
@@ -20,17 +20,17 @@ time.sleep(1)
 
 def possible(x, y, n):
     for i in range(0, 9):
-        if grid[i][x] == n and i != y: # Checks for number (n) in X columns
+        if grid[i][x] == n and i != y: # proverava x osu
             return False
 
     for i in range(0, 9):
-        if grid[y][i] == n and i != x: # Checks for number (n) in X columns
+        if grid[y][i] == n and i != x: # proverava y osu
             return False
 
     x0 = (x // 3) * 3
     y0 = (y // 3) * 3
     for X in range(x0, x0 + 3):
-        for Y in range(y0, y0 + 3):  # Checks for numbers in box(no matter the position, it finds the corner)
+        for Y in range(y0, y0 + 3):  # proverava 3*3 kvadrate posebno
             if grid[Y][X] == n:
                 return False    
     return True
