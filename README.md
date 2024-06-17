@@ -1,4 +1,4 @@
-# Main
+# Main.py
 Petar Tošić II-5 2023/2024.
 
 Kod - Sudoku u pythonu
