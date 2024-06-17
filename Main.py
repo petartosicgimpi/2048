@@ -14,7 +14,7 @@ while True:
 
     if len(grid) == 9:
         break
-    print('Row ' + str(len(grid)) + ' Complete')
+    print('Row ' + str(len(grid)) + 'Sledeći red')
 
 time.sleep(1)
 
